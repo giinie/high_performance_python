@@ -32,3 +32,5 @@ def fibonacci_succinct():
     is_odd = lambda x: x % 2
     first_5000 = islice(fibonacci(), 0, 5000)
     return sum(1 for x in first_5000 if is_odd(x))
+
+print(fibonacci_succinct())
